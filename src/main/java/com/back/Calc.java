@@ -12,6 +12,7 @@ public class Calc {
 
             if (op.equals("+")) result += num;
             else if (op.equals("-")) result -= num;
+            else if (op.equals("*")) result *= num;
         }
         return result;
     }
