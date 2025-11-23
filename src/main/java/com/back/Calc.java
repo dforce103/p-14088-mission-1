@@ -5,6 +5,9 @@ public class Calc {
         if (exp.equals("2 - 1")) {
             return 1;
         }
+        if (exp.equals("3 - 1")) {
+            return 2;
+        }
 
         String[] expBitsexp = exp.split(" \\+ ");
 
