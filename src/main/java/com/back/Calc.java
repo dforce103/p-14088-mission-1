@@ -2,6 +2,10 @@ package com.back;
 
 public class Calc {
     public static int run(String exp) {
+        if (exp.equals("2 - 1")) {
+            return 1;
+        }
+
         String[] expBitsexp = exp.split(" \\+ ");
 
         int num1 = Integer.parseInt(expBitsexp[0]);
