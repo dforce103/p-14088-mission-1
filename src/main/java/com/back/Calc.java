@@ -2,18 +2,16 @@ package com.back;
 
 public class Calc {
     public static int run(String exp) {
-        if (exp.equals("2 - 1")) {
-            return 1;
+        String[] bits = exp.split(" ");
+
+        int num1 = Integer.parseInt(bits[0]);
+        String op = bits[1];
+        int num2 = Integer.parseInt(bits[2]);
+
+        if (op.equals("-")) {
+            return num1 - num2;
         }
-        if (exp.equals("3 - 1")) {
-            return 2;
-        }
-
-        String[] expBitsexp = exp.split(" \\+ ");
-
-        int num1 = Integer.parseInt(expBitsexp[0]);
-        int num2 = Integer.parseInt(expBitsexp[1]);
-
         return num1 + num2;
+
     }
 }
